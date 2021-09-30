@@ -1,6 +1,11 @@
-# Python_Grammar
-
-### Python Grammar 정리
-* [파이썬 기본편 - 6시간 뒤면 나도 개발자](https://edu.goorm.io/learn/lecture/19917/%EB%AC%B4%EB%A3%8C-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8-6%EC%8B%9C%EA%B0%84-%EB%92%A4%EB%A9%B4-%EB%82%98%EB%8F%84-%EA%B0%9C%EB%B0%9C%EC%9E%90) 강의 요약
-* 각 회차별 정리보다는 큰 틀에서 개념을 잡는 용도로 작성
+# Python Grammar Basic  
   
+## Python 문법 정리 수업 가이드라인
+
+본 source code는 [Coding Campus Teacher Guide- Python 문법 기초]() 수업에서 사용 가능합니다.     
+각 강의마다 `students` version과 `complete` version이 존재합니다.
+* `students` : 학생들에게 복사하여 배포하시기 쉽도록 result값을 제외한 version입니다.  
+* `complete` : 중요한 point들과 정답을 한번에 확인하실 수 있는 선생님용 version입니다.  
+* **본 강의 교안은 수업외의 용도로 활용될 수 없습니다.**
+   
+repl의 multiplayer, snapdrop 등을 활용하여 강의를 진행할 수 있습니다.
