@@ -95,7 +95,7 @@ print(','.join(str1))
 print(str1.join(',,,,,,'))
 
 print('a,b,c,d'.split(','))
-print('hello world'.split(' '))
+print('hello world'.split()) # 공백을 기준으로 분할
 
 #<------- 예제 문제 -------->
 # 전화번호를 입력받아 가장 마지막 4자리를 ****로 변환하는 프로그램
