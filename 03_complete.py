@@ -9,6 +9,10 @@ lst4 = [1, -0.2, 'hello', True]
 lst_index = [1, 2, 3, 4, 5]
 str_index = '12345'
 
+# 연산자를 활용한 이어쓰기
+print(lst_index + ['hello', '리스트'])
+print(str_index + "hello문자열")
+
 # index를 통한 요소 접근
 print(lst_index[1])
 print(str_index[1])
@@ -24,4 +28,57 @@ lst_index[1] = '변경됨'
 print(lst_index)
 print(str_index)
 
-#<------- 문자열과 리스트 -------->
+#<------- 리스트 추출하기 -------->
+students = ['유재석', '강호동', '신동엽']
+
+# 처음부터 특정 위치까지
+print(students[:2])
+# 특정위치부터 끝까지
+print(students[1:])
+# 처음부터 끝까지 2칸씩 
+print(students[::2])
+# 처음부터 끝까지 -1칸씩 감소 (뒤집기)
+print(students[::-1])
+
+#<------- 리스트 처리 함수 -------->
+# 주요 리스트 처리 함수 사용 예시
+lst = ['p', 'y', 't', 'h', 'o', 'n']
+
+print("예제 리스트의 길이 :", len(lst))
+print("예제 리스트의 최댓값 :", max(lst))     # 알파벳 순서에 따라 최댓값 결정
+print("예제 리스트의 최솟값 :", min(lst))     # 알파벳 순서에 따라 최솟값 결정
+
+#<------- 리스트 처리 메서드 -------->
+# 주요 리스트 처리 메서드 사용 예시
+num = [1, 2, 3, 4, 5, 6, 5, 5, 5, 7, 5]
+
+print(num.index(5))   # 5가 가장 처음으로 등장하는 index를 반환
+print(num.count(5))
+
+num.append(100)
+print(num)            # append는 list의 가장 뒤에 요소를 추가함
+num.insert(0, 100)    # insert는 원하는 index에 요소 추가 가능
+num.insert(3, 1000)
+print(num)            # 기존의 요소는 한 칸씩 뒤로 밀려남
+
+print(num.pop())      # pop할 index 생략시 가장 마지막 요소를 반환 후 삭제
+print(num.pop(3))
+print(num)
+
+num.remove(5)         # 가장 첫번째로 등장한 5를 삭제
+print(num)
+
+num.reverse()         # 현재 리스트를 그래도 reverse
+print(num)
+
+num.sort()
+print(num)
+
+lst = ['p', 'y', 't', 'h', 'o', 'n']
+num.extend(lst)
+print(num)
+
+num.clear()
+print(num)
+
+#<------- 예제 문제 -------->
