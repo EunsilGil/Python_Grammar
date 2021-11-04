@@ -1,3 +1,5 @@
+print("제 이름은 *** 입니다")
+
 # 변수 선언
 int1 = 10
 int2 = -10
@@ -13,7 +15,7 @@ print(2 - 3)  # result : -1
 print(2 * 3)  # result : 6
 # 제곱
 print(2 ** 3) # result : 8
-# 나눗셈 : 결과가 늘 float(실수 자료형)으로 반환
+# 나눗셈 : 결과가 늘 소숫점이 있는 실수(float)로 반환
 print(3 / 2)  # result : 1.5
 print(4 / 2)  # result : 2.0
 # 몫

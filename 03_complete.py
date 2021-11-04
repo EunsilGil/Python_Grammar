@@ -28,6 +28,17 @@ lst_index[1] = '변경됨'
 print(lst_index)
 print(str_index)
 
+# 값의 복사
+mutable1 = [0 , 1, 2, 3]
+mutable2 = mutable1     # mutable1의 주소값이 mutable2에 복사됨
+mutable2[0] = 5         # 값은 주소값을 참조하고 있으므로 둘 다 값이 변경됨
+print(mutable1, mutable2)
+
+immu1 = '12345'
+immu2 = immu1   # immu1의 값을 그대로 immu2에 복사
+immu2 = '52345' # immu2의 값이 변경된 것이므로 immu1에는 아무런 영향이 X
+print(immu1, immu2)
+
 #<------- 리스트 추출하기 -------->
 students = ['유재석', '강호동', '신동엽']
 
@@ -82,3 +93,12 @@ num.clear()
 print(num)
 
 #<------- 예제 문제 -------->
+# 숫자 10개가 들어 있는 리스트를 입력받아, 그 중 n 번째 요소를 출력하는 프로그램
+# 해당 프로그램의 입력은 2가지 입니다.
+# 1. 숫자 리스트
+# 2. 출력할 index 번호 n
+# 출력 : 숫자 리스트에서 n번째 값을 출력합니다.
+
+num_list = [int(input("리스트에 넣을 숫자를 입력하세요 : ")) for _ in range(10)]
+n = int(input("몇 번째 요소를 출력할까요? : "))
+print(num_list.pop(n-1))
