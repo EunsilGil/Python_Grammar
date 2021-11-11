@@ -99,6 +99,6 @@ print(num)
 # 2. 출력할 index 번호 n
 # 출력 : 숫자 리스트에서 n번째 값을 출력합니다.
 
-num_list = [int(input("리스트에 넣을 숫자를 입력하세요 : ")) for _ in range(10)]
+num_list = [int(num) for num in input("숫자 10개를 입력하세요 : ").split()]
 n = int(input("몇 번째 요소를 출력할까요? : "))
 print(num_list.pop(n-1))
